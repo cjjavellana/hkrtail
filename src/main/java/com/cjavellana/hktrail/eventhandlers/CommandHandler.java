@@ -14,7 +14,7 @@ public class CommandHandler implements Observer {
     private static final int MAX_ELEMENTS = 10;
 
     private Stack[] stacks = new Stack[10];
-    private Queue[] queues = new Queue[10];
+    private Deque[] queues = new Deque[10];
 
     private int stacksCount = 0;
     private int queuesCount = 0;
@@ -142,7 +142,7 @@ public class CommandHandler implements Observer {
         if (stack.size() < MAX_ELEMENTS) {
             stack.push(value);
         } else {
-            System.out.println("error: Stack is full");
+            System.out.println("error: stack is full");
         }
     }
 
@@ -311,7 +311,7 @@ public class CommandHandler implements Observer {
         if (queue.isEmpty()) {
             System.out.println("empty");
         } else {
-            for (Iterator iterator = queue.iterator(); iterator.hasNext(); ) {
+            for (Iterator iterator = ((Deque) queue).descendingIterator(); iterator.hasNext(); ) {
                 System.out.print(iterator.next() + " ");
             }
             System.out.println();
