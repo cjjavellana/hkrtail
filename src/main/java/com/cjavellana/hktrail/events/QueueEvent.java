@@ -1,7 +1,14 @@
 package com.cjavellana.hktrail.events;
 
 /**
- * Created by cjavellana on 26/3/15.
+ * This class represents an operation event on the {@link java.util.Queue} such as: <br/>
+ * <ul>
+ * <li>CREATE_QUEUE</li>
+ * <li>ENQUEUE</li>
+ * <li>DEQUEUE</li>
+ * <li>DELETE_QUEUE</li>
+ * <li>PRINT_QUEUE</li>
+ * </ul>
  */
 public enum QueueEvent implements Event {
     CREATE_QUEUE,

@@ -1,7 +1,14 @@
 package com.cjavellana.hktrail.events;
 
 /**
- * Created by cjavellana on 25/3/15.
+ * This class represents an operation event on the {@link java.util.Stack} such as: <br/>
+ * <ul>
+ * <li>CREATE_STACK</li>
+ * <li>PUSH_ELEMENT</li>
+ * <li>POP_ELEMENT</li>
+ * <li>DELETE_STACK</li>
+ * <li>PRINT_STACK</li>
+ * </ul>
  */
 public enum StackEvent implements Event {
 
